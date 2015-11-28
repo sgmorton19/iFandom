@@ -8,22 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		840994F51C08CC9700ABA686 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840994F41C08CC9700ABA686 /* AppDelegate.swift */; };
-		840994F71C08CC9700ABA686 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840994F61C08CC9700ABA686 /* ViewController.swift */; };
 		840994FA1C08CC9700ABA686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840994F81C08CC9700ABA686 /* Main.storyboard */; };
 		840994FD1C08CC9700ABA686 /* iFandom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840994FB1C08CC9700ABA686 /* iFandom.xcdatamodeld */; };
 		840994FF1C08CC9700ABA686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840994FE1C08CC9700ABA686 /* Assets.xcassets */; };
 		840995021C08CC9700ABA686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840995001C08CC9700ABA686 /* LaunchScreen.storyboard */; };
+		8409950B1C08D22C00ABA686 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8409950A1C08D22C00ABA686 /* CloudKit.framework */; };
+		840995111C08E50C00ABA686 /* ShowsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840995101C08E50B00ABA686 /* ShowsTVC.swift */; };
+		840995131C08E9CE00ABA686 /* SeasonsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840995121C08E9CE00ABA686 /* SeasonsTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		840994F11C08CC9700ABA686 /* iFandom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFandom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840994F41C08CC9700ABA686 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840994F61C08CC9700ABA686 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840994F91C08CC9700ABA686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840994FC1C08CC9700ABA686 /* iFandom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iFandom.xcdatamodel; sourceTree = "<group>"; };
 		840994FE1C08CC9700ABA686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840995011C08CC9700ABA686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840995031C08CC9700ABA686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840995091C08D22600ABA686 /* iFandom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iFandom.entitlements; sourceTree = "<group>"; };
+		8409950A1C08D22C00ABA686 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		840995101C08E50B00ABA686 /* ShowsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowsTVC.swift; sourceTree = "<group>"; };
+		840995121C08E9CE00ABA686 /* SeasonsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8409950B1C08D22C00ABA686 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 		840994E81C08CC9700ABA686 = {
 			isa = PBXGroup;
 			children = (
+				8409950A1C08D22C00ABA686 /* CloudKit.framework */,
 				840994F31C08CC9700ABA686 /* iFandom */,
 				840994F21C08CC9700ABA686 /* Products */,
 			);
@@ -56,9 +63,11 @@
 		840994F31C08CC9700ABA686 /* iFandom */ = {
 			isa = PBXGroup;
 			children = (
+				840995091C08D22600ABA686 /* iFandom.entitlements */,
 				840994F41C08CC9700ABA686 /* AppDelegate.swift */,
-				840994F61C08CC9700ABA686 /* ViewController.swift */,
 				840994F81C08CC9700ABA686 /* Main.storyboard */,
+				840995101C08E50B00ABA686 /* ShowsTVC.swift */,
+				840995121C08E9CE00ABA686 /* SeasonsTVC.swift */,
 				840994FE1C08CC9700ABA686 /* Assets.xcassets */,
 				840995001C08CC9700ABA686 /* LaunchScreen.storyboard */,
 				840995031C08CC9700ABA686 /* Info.plist */,
@@ -99,6 +108,12 @@
 				TargetAttributes = {
 					840994F01C08CC9700ABA686 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2TWGP5KBL8;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,8 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840995131C08E9CE00ABA686 /* SeasonsTVC.swift in Sources */,
 				840994FD1C08CC9700ABA686 /* iFandom.xcdatamodeld in Sources */,
-				840994F71C08CC9700ABA686 /* ViewController.swift in Sources */,
+				840995111C08E50C00ABA686 /* ShowsTVC.swift in Sources */,
 				840994F51C08CC9700ABA686 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +267,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iFandom/iFandom.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iFandom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stephen.iFandom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +282,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iFandom/iFandom.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iFandom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stephen.iFandom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
